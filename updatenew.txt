@@ -1,0 +1,17 @@
+$scope.updateRecord=function(){
+	var person = {
+		"ID": $scope.Person_Id,
+		"Name": $scope.Person_Name,
+		"CNIC": $scope.Person_CNIC,
+		"Age": $scope.Person_Age,
+		"Height":$scope.Person_Height
+	};
+		var promise=$http.put('http://exampleapi.somee.com/api/person/'+$scope.Person_Id, person);
+	promise.success(function (data, status, headers, config) {
+	$scope.data=data;
+	resetOptions();
+	});
+	promise.error(function (data, status, headers, config) {
+	alert("error occured while sending ajax request");
+	});
+}

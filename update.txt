@@ -1,0 +1,9 @@
+$("#updateButton").click(function (){
+		
+		var id = $("#eid").val();
+		var name = $("#ename").val();
+		var age = $("#eage").val();
+		var height = $("#eheight").val();
+		var cnic = $("#ecnic").val();		
+		var jsonObj = { ID: id , Name: name , Age: age , Height: height , CNIC: cnic};
+		var Url = "http://labapi.somee.com/api/Person/" + id;

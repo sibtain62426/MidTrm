@@ -1,0 +1,17 @@
+function deletePerson(id){
+			var delUrl = "http://labapi.somee.com/api/Person/" + id;
+		$.ajax({
+                    type: "DELETE",
+                    url: delUrl,
+                    success: function (res) {      						  
+						 getPersonData();             
+                    },
+                    failure: function (res) {
+                        alert("Failure");
+                    },
+                    error: function (res) {
+                        alert("Error");
+                    }
+                });
+		
+		}
