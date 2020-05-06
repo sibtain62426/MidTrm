@@ -65,7 +65,7 @@ Angular is quit easy to SJON. First create the website front hand profile and it
 click this link to see [Angular Code](Angular.html)
 
 ### Update:
-If you want to update any person data just open its form and update it. Click to see update code [Update Code](update.txt)
+If you want to update any person data just open its form and update it. Click to see update code [Update Code](updatenew.txt)
 just click on Update button
 
 ![](updatea.PNG)
